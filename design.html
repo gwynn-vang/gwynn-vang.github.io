@@ -14,15 +14,69 @@
 	</head>
 	
 	<body>
+		<header> 
+			<div class="container mt-4"> 
+				<div class="header d-flex justify-content-between align-items-center">
+				<h2 class="about-link"><a href="index.html">Gwynnevere Vang</a></h2>
+				<h1 class="home-link"><a href="index.html">HOME</a></h1>
+				</div>
+			</div>
+    	</header>
+		<div class="design-gallery">
+			<div class="gallery-item"><img src="images/birdie.jpg" alt="Bird icon">
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#BirdIcon"></button>
+			</div>
+			<div class="gallery-item"><img src="images/bluecat.webp" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/catfriend.webp" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/catkeyboard.webp" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/greenbird.jpg" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/orangecat.webp" alt="Bird icon"></div>
 
-		<!-- site content goes between here -->
-
-		<div class="container py-5">
-                <h1>hello!</h1>
-                <p>Welcome to [your name here]'s website.</p>
+			<div class="gallery-item"><img src="images/birdie.jpg" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/bluecat.webp" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/catfriend.webp" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/catkeyboard.webp" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/greenbird.jpg" alt="Bird icon"></div>
+			<div class="gallery-item"><img src="images/orangecat.webp" alt="Bird icon"></div>
 		</div>
 
-        <!-- and here -->
+		<!--MODALS-->
+		<div class="modal fade" id="BirdIcon" tabindex="-1" 		aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog .modal-fullscreen">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">Chirp!</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3">
+										<h2>Tweet Tweet...</h2>
+									</div>
+									<div class="col-md-9">
+										<img src="images/birdie.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	<footer class="footer p-3">
+      <div class="container d-flex justify-content-between">
+        <span>Gwynnevere Vang</span>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Design</a>
+          <a href="writing.html">Writing</a>
+        </div>
+      </div>
+    </footer>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 		<script src="js/main.js"></script>
