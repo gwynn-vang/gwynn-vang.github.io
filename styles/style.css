@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
 @font-face {
     font-family: "DejaVu Serif";
     src: url("fonts/DejaVuSerif.ttf") format("truetype");
@@ -32,18 +36,25 @@ body {
     color: white;
 }
 
-.bg-light {
-    background-color: red;
-}
-
 .hero-section h1 {
     color: #915466;
-    font-family: "DejaVu Serif", serif;
-    font-weight: 600;
+    font-family: "Shrikhand";
+}
+
+.header h1 { 
+    font-family: "Shrikhand";
+    font-size: 67px;
+}
+
+.header h2 { 
+    font-family: "Tangerine";
+    font-size: 67px;
+    font-weight: 200px;
+    color: #915466;
 }
 
 h2, h3, h4, h5 {
-    font-family: "Texturina", serif;
+    font-family: "Shrikhand";
     color: #151C0D;
 }
 
@@ -76,6 +87,9 @@ h2, h3, h4, h5 {
     padding: 2%;
 }
 
+.btn-pink { 
+    background-color: #e99ab2;
+}
 .work-card img {
     height: 300px;
     object-fit: cover;
@@ -91,11 +105,6 @@ h2, h3, h4, h5 {
     color: #FFFDF1;
 }
 
-h2 {
-    font-weight: 700;
-    color: #333;
-}
-
 .modal-body img {
     width: 100%;
 }
@@ -104,53 +113,45 @@ h2 {
     padding: 1px
 }
 
-.footer { 
-    width: 100%;
-    height: 10vh;
-    background-color: #ac7283;
-    list-style-type: none;
-    display: flex;
-    padding-top: 3%;
-}
-
-.footer-link { 
-    color: #fcf9f0;
-    text-decoration: none;
-}
-
 .card-custom { 
   background: white; 
   border-radius: 20px; 
   padding: 20px; 
+  font-size: 15px;
+}
+
+.card-custom h2 { 
+    text-align: center;
+}
+
+.card-custom img { 
+    width: auto; 
+    aspect-ratio: 1/1;  
+    object-fit: cover; 
 }
 
 .header { 
-  background: url('image') center/cover no-repeat;
+  background: url('../images/fheader.jpg') center/cover no-repeat;
   border-radius: 20px; 
   padding: 40px; 
-  color: green; 
+  color: #83944C; 
+}
+
+.header img { 
+    opacity: 75%;
 }
 
 .green-box { 
-  background-color: green; 
+  background-color: #a7c957; 
   color: white; 
   padding: 40px; 
   border-radius: 15px; 
 }
 
-.btn-pink { 
-  background-color: pink; 
+.btn-green { 
+  background-color: #a7c957; 
   color: black; 
   border-radius: 10px; 
-}
-
-.circle { 
-  width: 50px; 
-  height: 50px; 
-  background: white; 
-  border-radius: 50%; 
-  display: inline-block; 
-  margin: 5px;
 }
 
 .about-link { 
@@ -165,19 +166,13 @@ h2 {
   height: auto;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+.footer { 
+    background-color: #915466;
+    color: #FFFDF1;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.footer a { 
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
 }
