@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
+@import "animate.css";
+
 @font-face {
     font-family: "DejaVu Serif";
     src: url("fonts/DejaVuSerif.ttf") format("truetype");
@@ -58,7 +60,11 @@ body {
     color: #915466;
 }
 
-h2, h3, h4, h5 {
+.h2 {
+    font-family: "DejaVu Serif";
+}
+
+h3, h4, h5 {
     font-family: "Shrikhand";
     color: #151C0D;
 }
@@ -121,7 +127,7 @@ h2, h3, h4, h5 {
 .card-custom { 
   background: white; 
   border-radius: 20px; 
-  padding: 20px; 
+  padding: 15px; 
   font-size: 15px;
 }
 
@@ -136,10 +142,11 @@ h2, h3, h4, h5 {
 }
 
 .header { 
-  background: url('../images/fheader.jpg') center/cover no-repeat;
+  background-image: url('../images/fheader.jpg'); 
+  background-color: #fcf9f0bd;
+  background-blend-mode: overlay;
   border-radius: 20px; 
   padding: 40px; 
-  color: #83944C; 
 }
 
 .header img { 
@@ -149,9 +156,10 @@ h2, h3, h4, h5 {
 .green-box { 
   background-color: #a7c957; 
   color: white; 
-  padding: 40px; 
+  padding: 15px;
   border-radius: 15px; 
-  font-size: 30px;
+  font-family: "Tangerine";
+  font-size: 70px;
 }
 
 .btn-green { 
@@ -204,4 +212,14 @@ h2, h3, h4, h5 {
     color: white;
     margin-left: 15px;
     text-decoration: none;
+}
+
+h3.ani:hover {
+  animation: tada;
+  animation-duration: 2s;
+}
+
+h5.ani:hover {
+  animation: tada;
+  animation-duration: 2s;
 }
