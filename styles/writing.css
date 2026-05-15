@@ -27,7 +27,7 @@ body {
     min-height: 100vh;
 }
 
-body > .container {
+.container {
     flex: 1;
 }
 /* Hero Section */
@@ -79,39 +79,6 @@ h3, h4, h5 {
     font-size: 1.5rem;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
-    background-color: #ecc4c3;
-    color: #151C0D;
-}
-
-.modal-body img {
-    width: 100%;
-}
-
-.container { 
-    padding: 1px
-}
-
-.card-custom { 
-  background: white; 
-  border-radius: 20px; 
-  padding: 15px; 
-  font-size: 15px;
-}
-
-.card-custom h2 { 
-    text-align: center;
-}
-
-.card-custom img { 
-    width: auto; 
-    aspect-ratio: 1/1;  
-    object-fit: cover; 
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .header { 
   background-image: url('../images/fheader.jpg'); 
   background-color: #fcf9f0bd;
@@ -131,28 +98,30 @@ h3, h4, h5 {
 }
 
 .folder-container {
-    height: 100vh;
-    padding: 40px;
+    height: 95vh;
+    padding-top: 70px;
+    padding-right: 40px;
+    padding-left: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .folder {
-    width: 90%;
-    height: 85vh;
+    width: 95vh;
+    height: 55vh;
     background-color: #FFFDF1;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     position: relative;
-    padding: 25px;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 .nav-tabs {
+    font-family: Shrikhand;
     border-bottom: none;
     position: absolute;
     top: -42px;
@@ -235,6 +204,31 @@ h3, h4, h5 {
     display: block;
 }
 
+.file-item {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.file-item:hover .page-preview {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.page-preview { 
+    display: block;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 8px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translate(-10px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .btn-pink { 
     background-color: #e99ab2;
 }
@@ -250,10 +244,8 @@ h3, h4, h5 {
     background-color: #ecc4c3;
     color: #151C0D;
 }
+
 .footer { 
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: #915466;
     color: #FFFDF1;
