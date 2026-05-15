@@ -22,7 +22,13 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: "DejaVu Serif", serif;
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > .container {
+    flex: 1;
 }
 /* Hero Section */
 .hero-section {
@@ -73,24 +79,6 @@ h3, h4, h5 {
     font-size: 1.5rem;
 }
 
-.carousel-inner img {
-    width: 100%; 
-    aspect-ratio: 16/9;
-    object-fit: cover;
-}
-
-.carousel-control-prev img {
-    width: 50%; 
-    aspect-ratio: 1/1;
-    object-fit: cover;
-}
-
-.carousel-control-next img {
-    width: 50%; 
-    aspect-ratio: 1/1;
-    object-fit: cover;
-}
-
 .btn {
     background-color: var(--highlight-color-two);
     color: #151C0D;
@@ -101,6 +89,46 @@ h3, h4, h5 {
 .btn-pink { 
     background-color: #e99ab2;
 }
+
+.dropdown-toggle.btn-pink {
+    background-color: #e99ab2;
+    color: #151C0D;
+    border: none;
+}
+
+.dropdown-toggle.btn-pink:hover,
+.btn-pink:hover {
+    background-color: #ecc4c3;
+    color: #151C0D;
+}
+
+.dropdown-menu {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    background-color: #e99ab2;
+    color: #151C0D;
+    border-radius: 10px;
+    margin: 0.2rem 0;
+    padding: 0.4rem 1rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #ecc4c3;
+    color: #151C0D;
+}
+
 .work-card img {
     height: 300px;
     object-fit: cover;
@@ -166,6 +194,11 @@ h3, h4, h5 {
   background-color: #a7c957; 
   color: black; 
   border-radius: 10px; 
+}
+
+.btn-green:hover {
+  background-color: #d4e7a7;
+  color: black;
 }
 
 .about-link { 
