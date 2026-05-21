@@ -191,6 +191,7 @@ h3, h4, h5 {
 
 .contact-link { 
     font-size: 300%;
+    color: #915466;
     text-decoration: none;
     display: inline-block;
     transition: transform 0.2s ease;
@@ -239,6 +240,8 @@ h3, h4, h5 {
   border-radius: 20px; 
   padding: 15px; 
   font-size: 15px;
+  height: 55vh;
+  overflow-y: auto;
 }
 
 .card-custom h2 { 
@@ -252,7 +255,7 @@ h3, h4, h5 {
 }
 
 .header { 
-  background-image: url('../images/fheader.jpg'); 
+  background-image: url('../images/headerflower.webp'); 
   background-color: #fcf9f0bd;
   background-blend-mode: overlay;
   border-radius: 20px; 
@@ -263,11 +266,52 @@ h3, h4, h5 {
     opacity: 75%;
 }
 
+.card-about { 
+  background: white; 
+  border-radius: 20px; 
+  padding: 15px;
+  margin-bottom: 15px; 
+  font-size: 15px;
+  height: 110vh;
+  overflow-y: auto;
+}
+
+.card-about h2 { 
+    text-align: center;
+}
+
+.card-about img { 
+    width: 160px;
+    aspect-ratio: 1/1;  
+    object-fit: cover; 
+}
+
+.card-reel p { 
+    font-family: "Tangerine";
+    font-size: 34px;
+    text-align: center;
+}
+
+.about-text { 
+    font-family: "DejaVu Serif";
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-synopsis { 
+    font-family: "DejaVu Serif";
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+
 .green-box { 
   background-color: #a7c957; 
   color: white; 
   padding: 15px;
   border-radius: 15px; 
+  height: 30vh;
   font-family: "Tangerine";
   font-size: 70px;
 }
@@ -367,6 +411,10 @@ h3, h4, h5 {
     color: white;
     margin-left: 15px;
     text-decoration: none;
+}
+
+.footer a:hover { 
+    color: #ffd1dc;
 }
 
 h3.ani:hover {
