@@ -23,43 +23,53 @@
 			</div>
     	</header>
 		<div class="design-gallery">
-			<div class="gallery-item" data-bs-toggle="modal" data-bs-target="#HUSA">
+			<div class="gallery-item" data-bs-toggle="modal" data-bs-target="#KaraokeNight">
 				<img src="images/karaoke night social.png" class="gallery-img" alt="HUSA Karaoke Night Social Poster" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#KaraokeNight">
 			</div>
-			<div class="gallery-item"><img src="images/catfriend.webp" class="gallery-img" alt="Bird icon"></div>
+			<div class="gallery-item">
+				<img src="images/catfriend.webp" class="gallery-img" alt="Catdog" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Catdog">
+			</div>
 			<div class="gallery-item"><img src="images/catkeyboard.webp" class="gallery-img" alt="Bird icon"></div>
 			<div class="gallery-item"><img src="images/greenbird.jpg" class="gallery-img" alt="Bird icon"></div>
 			<div class="gallery-item"><img src="images/orangecat.webp" alt="Bird icon"></div>
 
-			<div class="gallery-item"><img src="images/birdie.jpg" alt="Bird icon"></div>
-			<div class="gallery-item"><img src="images/bluecat.webp" alt="Bird icon"></div>
-			<div class="gallery-item"><img src="images/catfriend.webp" alt="Bird icon"></div>
-			<div class="gallery-item"><img src="images/catkeyboard.webp" alt="Bird icon"></div>
-			<div class="gallery-item"><img src="images/greenbird.jpg" alt="Bird icon"></div>
-			<div class="gallery-item"><img src="images/orangecat.webp" alt="Bird icon"></div>
-		</div>
-
 		<!--MODALS-->
-		<div class="modal fade" id="#HUSA" tabindex="-1" 		aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h1 class="modal-title fs-5" id="exampleModalLabel">HUSA Karaoke Night Social</h1>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<div class="container">
-								<div class="modal-content-wrapper text-center">
-										<img src="images/karaoke night social.png" class="img-fluid" alt="HUSA Karaoke Night Social Poster">
-										<p class="mt-3">As the Marketing Manager for the Hmong United Students Association, I created this event poster for the Halloween event. </p>
-									</div>
-								</div>
-							</div>
-						</div>
+		<div class="modal fade" id="KaraokeNight" tabindex="-1" aria-labelledby="KaraokeNightLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="KaraokeNightLabel">HUSA Karaoke Night Social Poster</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body modal-layout">
+						<button class="gallery-arrow left-arrow" type="button" data-bs-target="#KaraokeNight" data-bs-slide="prev" fs-1>
+        					<span class="gallery-control-prev-icon" aria-hidden="true"></span>
+						</button>
+						<button class="gallery-arrow right-arrow" type="button" data-bs-target="#Catdog" data-bs-slide="next" fs-1>
+							<span class="gallery-control-next-icon" aria-hidden="true"></span>
+						</button>
+						<img id="KaraokeNight" src="images/karaoke night social.png" class="img-fluid modal-image" alt="HUSA Karaoke Night Social Poster">
+						<p class="modal-description text-start">This is a poster I designed for the HUSA Karaoke Night Social event. I used Adobe Illustrator to create the design, incorporating vibrant colors and playful typography to capture the fun and lively atmosphere of the event.</p>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="Catdog" tabindex="-1" aria-labelledby="CatdogLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="CatdogLabel">Catdog</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body modal-layout">
+						<img src="images/catfriend.webp" class="img-fluid modal-image" alt="Cat and dog illustration">
+						<p class="modal-description text-start">This is a poster I designed for the HUSA Karaoke Night Social event.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	<footer class="footer p-3">
       <div class="container d-flex justify-content-between">
         <span>Gwynnevere Vang</span>
