@@ -149,13 +149,15 @@ h3, h4, h5 {
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    padding: 0.5rem;
 }
 
 .modal-layout { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh; 
+    height: 95vh; 
+    overflow-y: auto;
 }
 
 .modal-description { 
@@ -168,6 +170,45 @@ h3, h4, h5 {
 
 /* this is css code to normalize your image sizes */
 
+.going-home button { 
+    background-color: #e99ab2;
+    color: #FFFDF1;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+}
+
+.going-home button:hover { 
+    background-color: #e6698e;
+    color: #FFFDF1;
+    transition: 0.3s ease;
+}
+
+
+.contact-link { 
+    font-size: 300%;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.contact-link:hover { 
+    text-decoration: underline;
+    transition: 0.5s ease;
+    color: #83944C;
+}
+
+.carousel {
+    align-items: center;
+    height: 95vh; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 .carousel-inner img {
     /* the width property tells the image to fill the entire container */
     width: 100%;
@@ -176,13 +217,17 @@ h3, h4, h5 {
 }
 
 .carousel-control-prev {
-    color: black;
-    left: -63px;
+    left: -22px;
 }
 
 .carousel-control-next { 
-    color: black;
-    right: -63px;
+    right: -22px
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon { 
+    filter: invert(100%);
+    top: 70%;
 }
 
 .container { 
@@ -230,7 +275,8 @@ h3, h4, h5 {
 .btn-green { 
   background-color: #a7c957; 
   color: black; 
-  border-radius: 10px; 
+  border-radius: 5px; 
+  font-size: 14px;
 }
 
 .btn-green:hover {
