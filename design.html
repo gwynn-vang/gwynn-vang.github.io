@@ -24,14 +24,17 @@
     	</header>
 		<div class="design-gallery">
 			<div class="gallery-item" data-bs-toggle="modal" data-bs-target="#KaraokeNight">
-				<img src="images/karaoke night social.png" class="gallery-img" alt="HUSA Karaoke Night Social Poster" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#KaraokeNight">
+				<img src="images/karaokenight.webp" class="gallery-img" alt="HUSA Karaoke Night Social Poster" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#KaraokeNight">
 			</div>
 			<div class="gallery-item">
-				<img src="images/catfriend.webp" class="gallery-img" alt="Catdog" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Catdog">
+				<img src="images/derbyog.webp" class="gallery-img" alt="DerbyHelmets" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DerbyHelmets">
 			</div>
-			<div class="gallery-item"><img src="images/catkeyboard.webp" class="gallery-img" alt="Bird icon"></div>
-			<div class="gallery-item"><img src="images/greenbird.jpg" class="gallery-img" alt="Bird icon"></div>
-			<div class="gallery-item"><img src="images/orangecat.webp" alt="Bird icon"></div>
+			<div class="gallery-item">
+				<img src="images/greenbird.jpg" class="gallery-img" alt="Bird icon">
+			</div>
+			<div class="gallery-item">
+				<img src="images/orangecat.webp" alt="Bird icon">
+			</div>
 
 		<!--MODALS-->
 		<div class="modal fade" id="KaraokeNight" tabindex="-1" aria-labelledby="KaraokeNightLabel" aria-hidden="true">
@@ -42,27 +45,45 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body modal-layout">
-						<img id="KaraokeNight" src="images/karaoke night social.png" class="img-fluid modal-image" alt="HUSA Karaoke Night Social Poster">
+						<img id="KaraokeNight" src="images/karaokenight.webp" class="img-fluid modal-image" alt="HUSA Karaoke Night Social Poster">
 						<p class="modal-description text-start">This is a poster I designed for the HUSA Karaoke Night Social event. I used Adobe Illustrator to create the design, incorporating vibrant colors and playful typography to capture the fun and lively atmosphere of the event.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="modal fade" id="Catdog" tabindex="-1" aria-labelledby="CatdogLabel" aria-hidden="true">
+		<div class="modal fade" id="DerbyHelmets" tabindex="-1" aria-labelledby="DerbyHelmetsLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="CatdogLabel">Catdog</h5>
+						<h5 class="modal-title" id="DerbyHelmetsLabel">Dungeons&Dragons Inspired Derby Helmets</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="modal-body modal-layout">
-						<img src="images/catfriend.webp" class="img-fluid modal-image" alt="Cat and dog illustration">
-						<p class="modal-description text-start">This is a poster I designed for the HUSA Karaoke Night Social event.</p>
+					<div id="DerbyCarousel" class="carousel slide">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/derbyog.webp" class="d-block w-100" alt="DerbyHelmets">
+							</div>
+							<div class="carousel-item">
+								<img src="images/helmetrevise.webp" class="d-block w-100" alt="DerbyHelmetRevised">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#DerbyCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#DerbyCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+						<p class="modal-description text-start">Recently, I got into Dungeons & Dragons and roller derby, so I thought "Why not combine the two?"</p>
+						<p class="modal-description text-start">I transfered the on-paper sketches onto Canva in order to work with vector-based shapes. I also made a revised version, experimenting with gradients.</p>
+						<p class="modal-description text-start">From top left to top right: Goblin, Unicorn, and Direwolf. From bottom left to bottom right: Mimic, Owlbear, and Beholder.</p>
 					</div>
 				</div>
 			</div>
 		</div>
+
 
 	<footer class="footer p-3">
       <div class="container d-flex justify-content-between">
